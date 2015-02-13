@@ -19,6 +19,10 @@ app.get('/slash', function(request, response) {
 			var fliptext = '@' + request.query.user_name + '\'s current status: ' + rageflip(request.query.text);
 			postAsSlackbot(fliptext, request.query.channel_name);
 			break;
+		case '/flip-silent':
+			var fliptext = rageflip(request.query.text);
+			response.send(fliptext);
+			break;
 		default:
 			break;
 	}
