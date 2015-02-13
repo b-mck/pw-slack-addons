@@ -1,0 +1,5 @@
+{
+  "name": "PriceWaiter Slack Commands",
+  "description": "A simple Node app implementing custom Slack commands for use by PriceWaiter",
+  "keywords": ["node", "express", "static"]
+}
